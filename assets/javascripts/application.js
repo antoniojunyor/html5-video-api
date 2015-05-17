@@ -5,6 +5,17 @@ var html5VideoPlayer = (function() {
   video = document.querySelector('video');
 
   function init() {
+    togglePlayPauseVideo();
+  }
+
+  function togglePlayPauseVideo() {
+    videoContainer.addEventListener('click', function() {
+      if (video.paused == true) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
   }
 
   return {
