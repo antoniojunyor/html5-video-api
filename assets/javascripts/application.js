@@ -10,7 +10,7 @@ var html5VideoPlayer = (function() {
 
   function togglePlayPauseVideo() {
     videoContainer.addEventListener('click', function() {
-      if (video.paused == true) {
+      if (video.paused) {
         video.play();
       } else {
         video.pause();
